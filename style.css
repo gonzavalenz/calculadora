@@ -1,0 +1,90 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #23232f;
+    color: #eee;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: .5rem;
+    width: 19rem;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.button-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: .5rem;
+}
+  
+input {
+    margin: 0;
+    width: 98%;
+    height: 3rem;
+    border-radius: .5rem;
+    grid-column: 1 / 5;
+    grid-row: 1 / 5;
+    background-color: #30303f;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+button {
+    margin: 0;
+    width: 4rem;
+    border-radius: 2rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    background-color: #55505f;
+    color: white;
+    border: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #35303f;
+    cursor: pointer;
+    transform: translateY(-.1rem);
+}
+
+button:active {
+    transform: translateY(.1rem);
+}
+
+.operator {
+    color: #fff;
+    background-color: #008cff;
+}
+
+.operator:hover {
+    color: #fff;
+    background-color: #016cc4;
+}
+
+.function {
+    background-color: #bb0f23;
+}
+
+.function:hover {
+    background-color: #880012;
+}
+
+#btnIgual {
+    background-color: #00c060;
+}
+
+#btnIgual:hover {
+    background-color: #00994d;
+}
+
+
+
